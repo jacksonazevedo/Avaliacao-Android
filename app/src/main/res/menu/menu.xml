@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/tst1"
-        android:title="Teste" />
-    <item android:id="@+id/tst2"
-        android:title="Teste"
-        />
+xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/telaTabs"
+    android:title="Tela Tabs" />
+<item android:id="@+id/op2"
+    android:title="Opção 2 "
+    />
 </menu>

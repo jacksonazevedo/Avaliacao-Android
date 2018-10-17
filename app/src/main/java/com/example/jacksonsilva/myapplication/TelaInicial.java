@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -41,6 +42,25 @@ public class TelaInicial extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
         return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.telaTabs:
+                Intent intent = new Intent(TelaInicial.this,TelaTabs.class);
+                //Bundle bundle = new Bundle();
+                ///bundle.putString("nome", edtLogin.getText().toString());
+               // intent.putExtras(bundle);
+                startActivity(intent);
+               // Toast.makeText(TelaInicial.this, "opção 1", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.op2:
+                Toast.makeText(TelaInicial.this, "opção 2", Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
 }
