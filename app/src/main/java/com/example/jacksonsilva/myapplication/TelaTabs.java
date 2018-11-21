@@ -43,8 +43,6 @@ public class TelaTabs extends AppCompatActivity {
 
             }
         });
-
-
     }
 
 

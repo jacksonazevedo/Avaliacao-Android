@@ -21,7 +21,8 @@
         <activity android:name=".PagerAdapter" />
         <activity android:name=".TabFragment1" />
         <activity android:name=".TabFragment2" />
-        <activity android:name=".TabFragment3"></activity>
+        <activity android:name=".TabFragment3" />
+        <activity android:name=".CadastrarUsuario"></activity>
     </application>
 
 </manifest>
