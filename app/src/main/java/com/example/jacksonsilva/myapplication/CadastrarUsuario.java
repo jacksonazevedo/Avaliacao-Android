@@ -37,6 +37,7 @@ public class CadastrarUsuario extends AppCompatActivity {
                 if (edtCadSenha.getText().toString().equals(edtConfsenha.getText().toString())){
 
                     Dao dao=new Dao(CadastrarUsuario.this,"AulaAndroid",null,1);
+
                     dao.inserirUsuario(edtCadLogin.getText().toString(),edtCadSenha.getText().toString());
                     Toast.makeText(CadastrarUsuario.this, "Dados Cadastrado com Sucesso!", Toast.LENGTH_SHORT).show();
 

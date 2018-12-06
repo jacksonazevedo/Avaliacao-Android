@@ -25,7 +25,7 @@ private Button btnLogin;
             public void onClick(View view) {
                 Dao dao=new Dao(MainActivity.this,"AulaAndroid",null,1);
 
-                if(dao.autenticar(edtLogin.getText().toString(),edtsenha.getText().toString())) {
+                if(dao.autenticar(edtLogin.getText().toString(), edtsenha.getText().toString())) {
                     Intent intent = new Intent(MainActivity.this,TelaInicial.class);
                     Bundle bundle = new Bundle();
                     bundle.putString("nome", edtLogin.getText().toString());
